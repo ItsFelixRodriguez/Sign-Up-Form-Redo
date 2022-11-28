@@ -1,0 +1,232 @@
+
+/* Font Import 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,500&display=swap');
+
+/* ----------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #ebb626;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container,
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+    /*background-color: rgba(0, 0, 0, 0.7); */
+}
+
+.credit {
+    position: absolute; bottom: 1 em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Picture Side */
+
+.left {
+background-image: url(./background.jpg);
+background-color: black;
+background-position: center;
+background-size: auto;
+background-repeat: no-repeat;
+width: 40vw;
+height: auto;
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+.bean {
+    height: 10vh;
+}
+
+
+/* right side */
+
+.right {
+    width: 60vw;
+    background-color: rgb(28, 33, 37);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.fake-pitch {
+    padding-left: 3vw;
+    font-weight: 500;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.incentive {
+    margin: 40px 0 80px;
+}
+
+/*form*/
+
+.form-row {
+    background-color:;
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+form{
+   /* margin-left: 10vw; */
+    color: white;
+}
+
+.input  {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+.form-title {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    background-color: rgb(2, 2 ,2);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #ebb626;
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    color: #ebb626;
+    font-weight: 700;
+    font-size: 1.2 em;
+    border: 2px solid #ebb626;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button :hover {
+    background-color: #ebb626;
+    color: black;
+}
+
+ .sign-In {
+    display: flex;
+    gap: 5px:
+}
+
+a{
+    text-decoration: none;
+    color: #ebb626;
+    font-weight: 700;
+}
+
+a :hover {
+    color: white;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .left{
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+    .logo {
+        width: 100vw;
+        position:static;
+        gap: 10px;
+    }
+    .right {
+        width: auto;
+        height: auto;
+    }
+    .fake-pitch {
+        width: auto;
+        margin-top: 30px;
+    }
+    .left {
+        padding: 10px 20px; 
+    }
+    .incentive {
+        padding: 20px 0;
+        margin: 0; 
+    }
+    .form {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+    .input{
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+    .form-button,
+    .sign-in{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    button{
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+}

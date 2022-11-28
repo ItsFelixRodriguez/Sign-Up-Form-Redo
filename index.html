@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styels.css">
+    <title>Sign Up Form Redux</title>
+    
+</head>
+<body>
+    <div class="container">
+    <div class="left">
+        <div class="logo">
+            <img src="./icon.svg" alt="logo" class="bean">
+            <h1 class="Good-Beans">Good Beans</h1>
+        </div>
+    </div>
+    <footer class="credit">Photo by <a href="https://unsplash.com/@nixcreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tyler Nix</a> on <a href="https://unsplash.com/s/photos/pour-over?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </footer>
+    <div class="right">
+        <div class="fake-pitch">
+            <p>This is not a real online service! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo maximus lectus, eget dapibus dui rhoncus ac. Quisque condimentum nisl ac lorem cursus, at blandit lectus cursus. Aliquam feugiat lobortis ante. </p>
+            <p>Sign up <em>now </em> to get right with coffee.</p>
+            <p class="incentive">You <em>know</em> sludge is the answer.</p>
+        </div>
+        <form action="#" class="signUp">
+            <div class="form-row">
+                <p class="form-title"> <em> Join  Good Beans  today! </em> </p>
+                <div class="input">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name" required>
+                </div>
+
+                <div class="input">
+                    <label for="last-name">Last Name: </label>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+
+                <div class="input">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="input">
+                    <label for="phone-number">Phone Number: </label>
+                    <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9">
+                </div>
+                <div class="input">
+                    <label for="password">Password (6 characters minimum):</label>
+                    <input type"password" id="password" name="password" minlength="6" required>
+                </div>
+                <div class="input">
+                    <label for="confirm-password">Confirm Password: </label>
+                    <input type="password" name="confirm-password" id="confrim-password" required>    
+                </div>   
+            </div>
+            <div class="form-button"><button type="submit">Create Account</button></div>
+        </form>
+        <div class="footer">
+        <p class="sign-In">Already have an Account? <a href="#">Click Here</a></p>
+        </div>    
+    </div>
+  
+    </div>
+</body>
+</html>
